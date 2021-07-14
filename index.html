@@ -19,15 +19,15 @@
             <div><img src="./img/logo/Reservia.svg" alt="Logo"></div>
             <div class=" taille-liens flex-around">
                 <div class="lien-navigation flex-centre trait-nav ">
-                    <a class="couleur-bleue " href="#">
+                    <a class="couleur-lien-noir " href="#hebergements">
                         Hébergements</a>
                 </div>
-                <div class="lien-navigation flex-centre">
-                    <a class="couleur-lien-noir" href="#">
+                <div class="lien-navigation flex-centre trait-nav">
+                    <a class="couleur-lien-noir" href="#activites">
                         Activités</a>
                 </div>
-                <div class="lien-navigation flex-centre">
-                    <a class="couleur-bleue " href="#">S'inscrire</a>
+                <div class="lien-navigation flex-centre trait-nav">
+                    <a class=" texte-gras couleur-bleue " href="#">S'inscrire</a>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
         </section>
     </header>
     <!-- partie hebergement -->
-    <section class="flex-around">
+    <section id="hebergements" class="flex-around">
         <div class=" flex-columnaround taille-hébergements background-gris-clair bloc-hebergements">
             <h3>Hébergement à marseille</h3>
             <div class="bloc1 flex-between">
@@ -248,7 +248,7 @@
         </aside>
     </section>
     <!-- Activités -->
-    <section class="activites">
+    <section id="activites" class="activites">
         <h2>Activités à Marseille</h2>
         <div class="bloc-activite flex-between">
             <div class="co-activites flex-columncentre">
@@ -309,26 +309,39 @@
         <div class=" footer background-gris-clair flex-between">
             <div class="marge-footer-1 taille-footer">
                 <h3>A propos</h3>
-                <p>Fonctionnement du site</p>
-                <p>Conditions générales de vente</p>
-                <p>Données et confidentialité</p>
-                <p></p>
+                <div class="d-lien-footer"> <a href="#" class="text-decoration lien-footer">Fonctionnement du site</a>
+                </div>
+                <div class="d-lien-footer"> <a href="#" class="text-decoration lien-footer">Conditions générales de
+                        vente</a></div>
+                <div class="d-lien-footer"> <a href="#" class="text-decoration lien-footer">Données et
+                        confidentialité</a></div>
+
+
+
+
             </div>
             <!--  -->
             <div class="taille-footer">
                 <h3>Nos hébergements</h3>
-                <p>Charte qualité</p>
-                <p>Soumettre votre hôtel</p>
+                <div class="d-lien-footer"> <a href="#" class="text-decoration lien-footer">Charte qualité</a></div>
+                <div class="d-lien-footer"><a href="#" class="text-decoration lien-footer">Soumettre votre hôtel</a>
+                </div>
 
-                <p></p>
+
+
+
+
             </div>
             <!--  -->
             <div class="taille-footer marge-footer-2">
                 <h3>Assistance</h3>
-                <p>Centre d'aide</p>
-                <p>Nous contacter</p>
+                <div class="d-lien-footer"> <a href="#" class="text-decoration lien-footer">Centre d'aide</a></div>
+                <div class="d-lien-footer"> <a href="#" class="text-decoration lien-footer">Nous contacter</a></div>
 
-                <p></p>
+
+
+
+
             </div>
 
         </div>

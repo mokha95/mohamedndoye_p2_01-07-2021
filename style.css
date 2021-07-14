@@ -9,6 +9,10 @@
     }
     /*  */
     
+    .text-decoration {
+        text-decoration: none;
+    }
+    
     .bordure-none {
         border: none;
     }
@@ -104,7 +108,18 @@
     }
     
     .trait-nav {
+        /* border-top: 1px solid blue; */
+        border-top: 1px solid transparent;
+    }
+    
+    .trait-nav:hover {
         border-top: 1px solid blue;
+    }
+    /* donne la propriété a son enfant */
+    /* l'enfant a le couleur bleue */
+    
+    .trait-nav:hover>a {
+        color: #0065fc;
     }
     /* header */
     
@@ -138,6 +153,11 @@
         color: white;
         cursor: pointer;
         border-radius: 0 10px 10px 0;
+    }
+    
+    .button-recherche:hover {
+        color: #0065fc;
+        background-color: #f2f2f2;
     }
     /* filtres */
     
@@ -247,6 +267,11 @@
         border-radius: 20px;
     }
     
+    .co-hebergement:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
     .img-hebergement1 {
         background-image: url("./img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
         background-size: cover;
@@ -318,6 +343,11 @@
         border-radius: 20px;
     }
     
+    .co-populaires:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    
     .co-details-populaires {
         width: 60%;
         padding-left: 5%;
@@ -382,10 +412,21 @@
         box-shadow: 5px 5px 5px 1px #f2f2f2;
     }
     
+    .co-activites:hover {
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+    
     .co-activites2356 {
         width: 100%;
         border-radius: 15px;
         box-shadow: 5px 5px 5px 1px #f2f2f2;
+    }
+    
+    .co-activites2356:hover {
+        cursor: pointer;
+        cursor: pointer;
+        transform: scale(1.03);
     }
     /*  */
     
@@ -471,4 +512,12 @@
     
     .marge-footer-2 {
         margin-right: 15%;
+    }
+    
+    .lien-footer {
+        color: black;
+    }
+    
+    .d-lien-footer {
+        height: 30px;
     }
