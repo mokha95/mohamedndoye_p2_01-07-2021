@@ -13,29 +13,34 @@
 
 <body>
     <!-- navigation -->
-    <nav class="navigation-taille">
+    <nav class="navigation-taille ">
 
-        <div class="flex-between">
-            <div><img src="./img/logo/Reservia.svg" alt="Logo"></div>
-            <div class=" taille-liens flex-around">
-                <div class="lien-navigation flex-centre trait-nav ">
-                    <a class="couleur-lien-noir " href="#hebergements">
+        <div class="taille-liens  responsive flex-between">
+            <div class="logo1"><img src="./img/logo/Reservia.svg" alt="Logo"></div>
+
+            <!-- liens hebergement et activité -->
+            <div class=" taille-liens12 flex-centre">
+
+
+                <div class=" position1 lien-navigation flex-centre trait-nav ">
+                    <a class="couleur-lien-noir  " href="#hebergements">
                         Hébergements</a>
                 </div>
-                <div class="lien-navigation flex-centre trait-nav">
+                <div class="lien-navigation position2 flex-centre trait-nav">
                     <a class="couleur-lien-noir" href="#activites">
                         Activités</a>
                 </div>
-                <div class="lien-navigation flex-centre trait-nav">
-                    <a class=" texte-gras couleur-bleue " href="#">S'inscrire</a>
-                </div>
             </div>
+            <div class="lien-navigation flex-centre trait-nav">
+                <a class=" texte-gras couleur-bleue responsive-head " href="#">S'inscrire</a>
+            </div>
+
         </div>
     </nav>
     <!-- header -->
     <header>
         <section>
-            <div>
+            <div class="wrap">
                 <h1>Trouvez votre hébergements pour vos vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
@@ -46,26 +51,35 @@
                 <div class="background-bleue flex-centre button-recherche">Rechercher</div>
             </div>
             <!-- partie filtre -->
-            <div class="filtre margefiltre">
+            <div class="mobile-filtre-w filtre margefiltre">
                 <div class="margefiltreTitre">
                     <h3>Filtres</h3>
                 </div>
-                <div class="flex-between filtre-texte-icons ">
-                    <i class="fas fa-money-bill-wave fa-lg filtre-icons i"></i>
-                    <div class="filtre-texte flex-centre">Economiques</div>
+                <!-- 2div -->
+                <div class="flex-around">
+
+
+                    <div class="flex-between filtre-texte-icons ">
+                        <i class="fas fa-money-bill-wave fa-lg filtre-icons i"></i>
+                        <div class="filtre-texte flex-centre">Economiques</div>
+                    </div>
+                    <div class=" flex-between filtre-texte-icons">
+                        <i class="fas fa-child fa-lg filtre-icons i"></i>
+                        <div class="filtre-texte flex-centre">Familiales</div>
+                    </div>
                 </div>
-                <div class=" flex-between filtre-texte-icons">
-                    <i class="fas fa-child fa-lg filtre-icons i"></i>
-                    <div class="filtre-texte flex-centre">Familiales</div>
+                <!--  -->
+                <div class="mobile-filtre-w flex-around">
+                    <div class="flex-between filtre-texte-icons">
+                        <i class="fas fa-heart fa-lg filtre-icons i"></i>
+                        <div class="filtre-texte flex-centre">Romantiques</div>
+                    </div>
+                    <div class=" flex-between filtre-texte-icons ">
+                        <i class="fas fa-dog fa-lg filtre-icons i"></i>
+                        <div class="filtre-texte flex-centre">Animaux autorisés </div>
+                    </div>
                 </div>
-                <div class="flex-between filtre-texte-icons">
-                    <i class="fas fa-heart fa-lg filtre-icons i"></i>
-                    <div class="filtre-texte flex-centre">Romantiques</div>
-                </div>
-                <div class=" flex-between filtre-texte-icons ">
-                    <i class="fas fa-dog fa-lg filtre-icons i"></i>
-                    <div class="filtre-texte flex-centre">Animaux autorisés </div>
-                </div>
+
             </div>
             <!-- icone informations -->
             <div class="info">
@@ -77,7 +91,7 @@
     <!-- partie hebergement -->
     <section id="hebergements" class="flex-around">
         <div class=" flex-columnaround taille-hébergements background-gris-clair bloc-hebergements">
-            <h3>Hébergement à marseille</h3>
+            <h2>Hébergement à marseille</h2>
             <div class="bloc1 flex-between">
                 <div class="co-hebergement flex-columncentre ">
                     <div class="img-hebergement1"></div>
@@ -184,7 +198,7 @@
         <!-- POPULAIRES -->
         <aside class="taille-populaire blocPopulaires background-gris-clair ">
             <div class="flex-between">
-                <h2 class="texte-gras">Les plus populaires </h2>
+                <h2 class="tablette-taille-titre-pop texte-gras">Les plus populaires </h2>
                 <div><i class="fas fa-chart-line fa-2x"></i></div>
             </div>
 
