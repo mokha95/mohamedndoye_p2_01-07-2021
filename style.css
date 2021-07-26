@@ -95,6 +95,10 @@ body {
 
 /* navigation */
 
+.navigation-taille {
+    height: auto;
+}
+
 .taille-liens {
     width: 100%;
 }
@@ -144,6 +148,10 @@ nav a {
 
 
 /* header */
+
+.pc-no-delete {
+    display: none;
+}
 
 .bordure-recherche {
     width: 400px;
@@ -611,30 +619,116 @@ nav a {
     }
 }
 
-@media screen and (max-width: 750px) {
-    .logo1 {
-        margin-bottom: auto;
+@media screen and (max-width:775px) {
+    .taille-liens {
+        width: 90%;
     }
-    .position1 {
-        position: absolute;
-        top: 50px;
-        left: -3px;
+    .taille-liens12 {
+        margin-left: 20%;
     }
-    .position2 {
-        position: absolute;
-        top: 50px;
-        right: 13px;
+    .bloc-hebergements {
+        /* height auto permet de faire entree tout le bloc automatiquement */
+        height: auto;
     }
-    .responsive-head {
-        margin-bottom: 43px;
+    .bloc1 {
+        flex-direction: column;
+        margin-bottom: 0;
     }
-    .wrap {
+    .bloc2 {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .co-hebergement {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .co-d-héb {
+        min-height: auto;
+    }
+    .bloc-activite {
+        flex-direction: column;
+        height: auto;
+    }
+    .co-activites {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .bloc-activite2356 {
+        width: 100%;
+        height: auto;
+    }
+    .co-activites2356 {
+        margin-bottom: 50px;
+    }
+    .img-activite1,
+    .img-activite2,
+    .img-activite3,
+    .img-activite4,
+    .img-activite5,
+    .img-activite6 {
+        /* on modifie la taille de toute les images */
+        height: 200px;
+    }
+    .footer {
+        flex-direction: column;
+        /* flex start est pour aligner les éléments en verticale */
+        align-items: flex-start;
+        height: auto;
+        padding-left: 20px;
+    }
+    .marge-footer-1 {
+        /* supprime la marge */
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .taille-liens {
+        flex-direction: row;
+    }
+    .taille-liens12 {
+        /*  */
+        order: 1;
+        width: 100%;
+        margin-left: 0;
+    }
+    .taille-liens-tel {
+        width: 50%;
+        border-top: 0;
+        border-bottom: 5px solid #f2f2f2;
+    }
+    .taille-liens {
+        width: 100%;
+        flex-direction: row;
         flex-wrap: wrap;
     }
-    #hebergements {
-        flex-direction: column-reverse;
+    .taille-liens-tel:hover {
+        border-top: 0;
+        border-bottom: 5px solid #0065fc;
     }
-    .taille-hébergements {
-        flex-direction: column;
+    .tel-titre-h1 {
+        font-size: x-large;
+    }
+    .bordure-recherche {
+        width: auto;
+        border: none;
+    }
+    .recherche {
+        width: 200px;
+        border-bottom: 1px solid #f2f2f2;
+        border-top: 1px solid #f2f2f2;
+    }
+    .recherche-padding {
+        margin: 0;
+    }
+    .button-recherche {
+        width: 50px;
+        border-radius: 15px;
+    }
+    .pc-no-delete {
+        display: block;
+    }
+    .tel-no-delete {
+        display: none;
     }
 }
