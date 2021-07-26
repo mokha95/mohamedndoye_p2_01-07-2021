@@ -104,7 +104,7 @@ body {
 }
 
 .taille-liens12 {
-    margin-left: 60%;
+    margin-left: 70%;
 }
 
 .lien-navigation {
@@ -574,7 +574,7 @@ nav a {
 
 @media screen and (max-width: 1295px) {
     .taille-liens12 {
-        margin-left: 35%;
+        margin-left: 48%;
     }
     .co-d-héb {
         min-height: 150px;
@@ -732,3 +732,5 @@ nav a {
         display: none;
     }
 }
+
+@media screen and (max-width:480px) {}
