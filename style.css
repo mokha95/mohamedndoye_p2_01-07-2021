@@ -277,6 +277,7 @@
         background-color: white;
         padding: 1%;
         border-radius: 20px;
+        box-shadow: 5px 5px 5px 1px #f2f2f2;
     }
     
     .co-hebergement:hover {
@@ -695,28 +696,38 @@
         .tel-no-delete {
             display: none;
         }
-    }
-    
-    @media screen and (max-width:480px) {
-        .wrap h1 {
-            text-align: center;
-            max-width: 84%;
-            margin-left: 35px;
+        .margefiltre {
+            padding-left: 5%;
         }
-        .wrap p {
-            margin-left: 74px;
-            margin-bottom: 30px;
+        .tel-e {
+            margin-right: 5px;
         }
-    }
-    
-    @media screen and (max-width:410px) {
-        .wrap h1 {
-            text-align: center;
-            max-width: 85%;
-            margin-left: 25px;
+        .tel-f {
+            margin-right: 0;
         }
-        .wrap p {
-            margin-left: 40px;
-            margin-bottom: 30px;
+        .filtre-texte {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .info {
+            padding-left: 5%;
+        }
+        .blocPopulaires {
+            border-radius: 0;
+        }
+        .bloc-hebergements {
+            background-color: white;
+        }
+        .tel-t-p {
+            padding-left: 5%;
+        }
+        .bloc-activite {
+            padding: 5%;
+            width: 90%;
+        }
+        html,
+        body {
+            margin: 0;
+            padding: 0;
         }
     }
